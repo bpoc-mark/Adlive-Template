@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="" />
+    <meta property="fb:app_id" content="">
+	<title>Adlive Template</title>
+	
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PJLQ9VQ');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- CSS読込 -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pagetop.css">
+    <link href="js/slick.css" rel="stylesheet" type="text/css">
+    <link href="js/slick-theme.css" rel="stylesheet" type="text/css">
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="css/base.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- フォントオーサム -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- ファビコン読込 -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <meta http-equiv="imagetoolbar" content="no">
+    <!-- 検索有無設定 -->
+    <!-- jquery読込 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/easy-rollover.js"></script>
+    <script src="https://use.typekit.net/zzb5mon.js"></script>
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/base-color.js"></script>
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
+
+    <script type="text/javascript" src="js/jquery.easeScroll.js"></script>
+    <!-- スムーススクロール -->
+    <script type="text/javascript">
+        $(function () {
+            $('a[href^="#"]').on('click', function () {
+                var speed = 1000;
+                var href = $(this).attr('href');
+                var target = $(href == '#' || href == '' ? 'html' : href);
+                var position = target.offset().top;
+                $('body,html').animate({
+                    scrollTop: position
+                }, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
+
+    <style id='base_val' type='text/css'></style>
+
+    <style type='text/css'>
+        table {
+            margin: auto;
+        }
+
+        /*表示切替*/
+        html body .view_pc {
+            display: block !important;
+        }
+
+        html body table.view_pc {
+            display: table !important;
+        }
+
+        html body table.view_pc tr {
+            display: table !important;
+        }
+
+        html body table.view_pc th {
+            display: table !important;
+        }
+
+        html body table.view_pc td {
+            display: table !important;
+        }
+
+        html body .view_pctab {
+            display: block !important;
+        }
+
+        html body table.view_pctab {
+            display: table !important;
+        }
+
+        html body table.view_pctab tr {
+            display: table !important;
+        }
+
+        html body table.view_pctab th {
+            display: table !important;
+        }
+
+        html body table.view_pctab td {
+            display: table !important;
+        }
+
+        html body .view_tab {
+            display: none !important;
+        }
+
+        html body .view_sp {
+            display: none !important;
+        }
+
+        html body .view_tabsp {
+            display: none !important;
+        }
+
+        @media only screen and (max-width: 1050px) {
+            html body .view_pc {
+                display: none !important;
+            }
+
+            html body .view_pctab {
+                display: block !important;
+            }
+
+            html body table.view_pctab {
+                display: table !important;
+            }
+
+            html body table.view_pctab tr {
+                display: table !important;
+            }
+
+            html body table.view_pctab th {
+                display: table !important;
+            }
+
+            html body table.view_pctab td {
+                display: table !important;
+            }
+
+            html body .view_tab {
+                display: block !important;
+            }
+
+            html body table.view_tab {
+                display: table !important;
+            }
+
+            html body table.view_tab tr {
+                display: table !important;
+            }
+
+            html body table.view_tab th {
+                display: table !important;
+            }
+
+            html body table.view_tab td {
+                display: table !important;
+            }
+
+            html body .view_sp {
+                display: none !important;
+            }
+
+            html body .view_tabsp {
+                display: block !important;
+            }
+
+            html body table.view_tabsp {
+                display: table !important;
+            }
+
+            html body table.view_tabsp tr {
+                display: table !important;
+            }
+
+            html body table.view_tabsp th {
+                display: table !important;
+            }
+
+            html body table.view_tabsp td {
+                display: table !important;
+            }
+        }
+
+        @media only screen and (max-width: 770px) {
+            html body .view_pc {
+                display: none !important;
+            }
+
+            html body .view_pctab {
+                display: none !important;
+            }
+
+            html body .view_tab {
+                display: none !important;
+            }
+
+            html body .view_sp {
+                display: block !important;
+            }
+
+            html body table.view_sp {
+                display: table !important;
+            }
+
+            html body table.view_sp tr {
+                display: table !important;
+            }
+
+            html body table.view_sp th {
+                display: table !important;
+            }
+
+            html body table.view_sp td {
+                display: table !important;
+            }
+
+            html body .view_tabsp {
+                display: block !important;
+            }
+
+            html body table.view_tabsp {
+                display: table !important;
+            }
+
+            html body table.view_tabsp tr {
+                display: table !important;
+            }
+
+            html body table.view_tabsp th {
+                display: table !important;
+            }
+
+            html body table.view_tabsp td {
+                display: table !important;
+            }
+        }
+
+        /* エラーメッセージ　赤文字設定 */
+        .error_msg {
+            color: #ff2e5a !important;
+        }
+    </style>
+
+    <style type='text/css'>
+        /* @font-face{
+            font-family: 'noto_light';
+            src: url(assets/css/fonts/NotoSansCJK-Light.ttc);
+            font-style: normal;
+        }
+
+        @font-face{
+            font-family: 'noto_regular';
+            src: url(assets/css/fonts/NotoSansCJK-Regular.ttc);
+            font-style: normal;
+        }
+
+        @font-face{
+            font-family: 'noto_medium';
+            src: url(assets/css/fonts/NotoSansCJK-Medium.ttc);
+            font-style: normal;
+        }
+
+        @font-face{
+            font-family: 'noto_bold';
+            src: url(assets/css/fonts/NotoSansCJKjp-Bold.otf);
+            font-style: normal;
+        }
+
+        @font-face{
+            font-family: 'noto_black';
+            src: url(assets/css/fonts/NotoSansCJKjp-Black.otf);
+            font-style: normal;
+        }
+
+        @font-face{
+            font-family: 'din_cond_bold';
+            src: url(assets/css/fonts/DINCondensed-Bold.ttf);
+            font-style: normal;
+        }
+
+        .noto_black{
+            font-family: 'noto_black';
+        }
+
+        .noto_bold{
+            font-family: 'noto_bold';
+        }
+        
+        .noto_light{
+            font-family: 'noto_light';
+        }
+
+        .noto_regular{
+            font-family: 'noto_regular';
+        }
+
+        .noto_medium{
+            font-family: 'noto_medium';
+        }
+
+        .din_cond_bold{
+            font-family: 'din_cond_bold';
+        } */
+
+        .flex_start{
+            align-items: flex-start;
+        }
+
+        .inline_block {
+            display: inline-block;
+        }
+
+        .mg_auto {
+            margin: 0 auto;
+        }
+
+        .txt_mg_0 {
+            margin: 0;
+        }
+
+        .txt_p_0 {
+            padding: 0;
+        }
+
+        .txt_pd_l_foot {
+            padding-left: 1.1vw;
+        }
+
+        .txt_deco {
+            text-decoration: none;
+        }
+
+        .bg_wht_grey {
+            background-color: #f5f5f5;
+        }
+
+        .u_line_d_grey {
+            border-bottom: solid 1px #475160;
+        }
+
+        .u_line_top_d_grey {
+            border-top: solid 1px #475160;
+        }
+
+        .u_line_right_d_grey {
+            border-right: solid 2px #475160;
+        }
+
+        .undrag {
+            user-drag: none;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .txt_main_color{
+            color: #1b1b1b;
+        }
+        
+        .relative{
+            position: relative;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="css/sp.css">
+</head>
+
+<body>
+    <header></header>
+
+    <main></main>
+
+    <footer></footer>
+
+    <script>
+        $("html").easeScroll();
+    </script>
+
+</body>
+
+</html>

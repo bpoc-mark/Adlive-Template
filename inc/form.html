@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="" />
+    <meta property="fb:app_id" content="">
+	<title>Adlive Template</title>
+	
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJLQ9VQ');</script>
+    <!-- End Google Tag Manager -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- CSS読込 -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/pagetop.css">
+	<link href="js/slick.css" rel="stylesheet" type="text/css">
+    <link href="js/slick-theme.css" rel="stylesheet" type="text/css">
+	<!-- Base CSS -->
+	<link rel="stylesheet" href="css/base.css">
+
+	<link rel="stylesheet" href="css/main.css">
+
+    <!-- フォントオーサム -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- ファビコン読込 -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <meta http-equiv="imagetoolbar" content="no">
+    <!-- 検索有無設定 -->
+    <!-- googlefont -->
+    <link href='https://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+    <!-- jquery読込 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/easy-rollover.js"></script>
+    <script src="https://use.typekit.net/zzb5mon.js"></script>
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/base-color.js"></script>
+	<script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.easeScroll.js"></script>
+	<!-- バリデーション読込 -->
+	<link rel="stylesheet" href="js/jQuery-Validation-Engine-master/css/validationEngine.jquery.css" type="text/css"/>
+	<script src="js/jQuery-Validation-Engine-master/js/languages/jquery.validationEngine-ja.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jQuery-Validation-Engine-master/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+	$(function(){
+		jQuery("#form form").validationEngine();
+	});
+	</script>
+	<!-- スムーススクロール -->
+	<script type="text/javascript">
+		$(function(){
+			$('a[href^="#"]').on('click', function(){
+				var speed = 1000;
+				var href= $(this).attr('href');
+				var target = $(href == '#' || href == '' ? 'html' : href);
+				var position = target.offset().top;
+				$('body,html').animate({scrollTop:position}, speed, 'swing');
+				return false;
+			});
+		});
+	</script>
+	<!-- 背景変換 -->
+
+	<style id='base_val' type='text/css'></style>
+
+	<style>
+		/* エラーメッセージ　赤文字設定 */
+		.error_msg {
+			color: #ff2e5a !important;
+		}
+		input:-webkit-autofill {
+			-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+		}
+		@media only screen and (min-width: 1051px){
+			.agreement input[type=checkbox] {
+				width: 1.8vw !important;
+				height: 1.8vw !important;
+			}
+		}
+		@media only screen and (max-width: 1050px){
+			.agreement input[type=checkbox] {
+				width: 4.5vw !important;
+				height: 4.5vw !important;
+			}
+		}
+		@media only screen and (max-width: 770px){
+			.agreement input[type=checkbox] {
+				width: 4vw !important;
+				height: 4vw !important;
+			}
+		}
+	</style>
+
+ 	<style type='text/css'>
+        table {
+            margin: auto;
+        }
+
+        /*表示切替*/
+        html body .view_pc {
+            display: block !important;
+        }
+
+        html body table.view_pc {
+            display: table !important;
+        }
+
+        html body table.view_pc tr {
+            display: table !important;
+        }
+
+        html body table.view_pc th {
+            display: table !important;
+        }
+
+        html body table.view_pc td {
+            display: table !important;
+        }
+
+        html body .view_pctab {
+            display: block !important;
+        }
+
+        html body table.view_pctab {
+            display: table !important;
+        }
+
+        html body table.view_pctab tr {
+            display: table !important;
+        }
+
+        html body table.view_pctab th {
+            display: table !important;
+        }
+
+        html body table.view_pctab td {
+            display: table !important;
+        }
+
+        html body .view_tab {
+            display: none !important;
+        }
+
+        html body .view_sp {
+            display: none !important;
+        }
+
+        html body .view_tabsp {
+            display: none !important;
+        }
+
+        @media only screen and (max-width: 1050px) {
+            html body .view_pc {
+                display: none !important;
+            }
+
+            html body .view_pctab {
+                display: block !important;
+            }
+
+            html body table.view_pctab {
+                display: table !important;
+            }
+
+            html body table.view_pctab tr {
+                display: table !important;
+            }
+
+            html body table.view_pctab th {
+                display: table !important;
+            }
+
+            html body table.view_pctab td {
+                display: table !important;
+            }
+
+            html body .view_tab {
+                display: block !important;
+            }
+
+            html body table.view_tab {
+                display: table !important;
+            }
+
+            html body table.view_tab tr {
+                display: table !important;
+            }
+
+            html body table.view_tab th {
+                display: table !important;
+            }
+
+            html body table.view_tab td {
+                display: table !important;
+            }
+
+            html body .view_sp {
+                display: none !important;
+            }
+
+            html body .view_tabsp {
+                display: block !important;
+            }
+
+            html body table.view_tabsp {
+                display: table !important;
+            }
+
+            html body table.view_tabsp tr {
+                display: table !important;
+            }
+
+            html body table.view_tabsp th {
+                display: table !important;
+            }
+
+            html body table.view_tabsp td {
+                display: table !important;
+            }
+        }
+
+        @media only screen and (max-width: 770px) {
+            html body .view_pc {
+                display: none !important;
+            }
+
+            html body .view_pctab {
+                display: none !important;
+            }
+
+            html body .view_tab {
+                display: none !important;
+            }
+
+            html body .view_sp {
+                display: block !important;
+            }
+
+            html body table.view_sp {
+                display: table !important;
+            }
+
+            html body table.view_sp tr {
+                display: table !important;
+            }
+
+            html body table.view_sp th {
+                display: table !important;
+            }
+
+            html body table.view_sp td {
+                display: table !important;
+            }
+
+            html body .view_tabsp {
+                display: block !important;
+            }
+
+            html body table.view_tabsp {
+                display: table !important;
+            }
+
+            html body table.view_tabsp tr {
+                display: table !important;
+            }
+
+            html body table.view_tabsp th {
+                display: table !important;
+            }
+
+            html body table.view_tabsp td {
+                display: table !important;
+            }
+        }
+
+        /* エラーメッセージ　赤文字設定 */
+        .error_msg {
+            color: #ff2e5a !important;
+        }
+    </style>
+
+    <style type='text/css'>
+        /* @font-face{
+            font-family: 'noto_light';
+            src: url(assets/css/fonts/NotoSansCJK-Light.ttc);
+            font-style: normal;
+        }
+
+        @font-face{
+            font-family: 'noto_regular';
+            src: url(assets/css/fonts/NotoSansCJK-Regular.ttc);
+            font-style: normal;
+        }
+
+        @font-face{
+            font-family: 'noto_medium';
+            src: url(assets/css/fonts/NotoSansCJK-Medium.ttc);
+            font-style: normal;
+        }
+
+        @font-face{
+            font-family: 'noto_bold';
+            src: url(assets/css/fonts/NotoSansCJKjp-Bold.otf);
+            font-style: normal;
+        }
+
+        @font-face{
+            font-family: 'noto_black';
+            src: url(assets/css/fonts/NotoSansCJKjp-Black.otf);
+            font-style: normal;
+        }
+
+        @font-face{
+            font-family: 'din_cond_bold';
+            src: url(assets/css/fonts/DINCondensed-Bold.ttf);
+            font-style: normal;
+        }
+
+        .noto_black{
+            font-family: 'noto_black';
+        }
+
+        .noto_bold{
+            font-family: 'noto_bold';
+        }
+        
+        .noto_light{
+            font-family: 'noto_light';
+        }
+
+        .noto_regular{
+            font-family: 'noto_regular';
+        }
+
+        .noto_medium{
+            font-family: 'noto_medium';
+        }
+
+        .din_cond_bold{
+            font-family: 'din_cond_bold';
+        } */
+
+        .flex_start{
+            align-items: flex-start;
+        }
+
+        .inline_block {
+            display: inline-block;
+        }
+
+        .mg_auto {
+            margin: 0 auto;
+        }
+
+        .txt_mg_0 {
+            margin: 0;
+        }
+
+        .txt_p_0 {
+            padding: 0;
+        }
+
+        .txt_pd_l_foot {
+            padding-left: 1.1vw;
+        }
+
+        .txt_deco {
+            text-decoration: none;
+        }
+
+        .bg_wht_grey {
+            background-color: #f5f5f5;
+        }
+
+        .u_line_d_grey {
+            border-bottom: solid 1px #475160;
+        }
+
+        .u_line_top_d_grey {
+            border-top: solid 1px #475160;
+        }
+
+        .u_line_right_d_grey {
+            border-right: solid 2px #475160;
+        }
+
+        .undrag {
+            user-drag: none;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+	
+	<link rel="stylesheet" href="css/sp.css">
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJLQ9VQ"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->	
+
+	<header></header>
+
+	<main>        
+
+        <!-- Form Section -->
+        <section class="form_section">
+            <div class="common_wrapper">
+                <form method="post" action="#form" enctype="multipart/form-data" novalidate class="txt_left cont_wrapper_70">
+                    <div class="wrapper_100 flex flex_center">
+                        <div class="form_item_1">
+                            <p class="txt_right txt_mg_0 view_pc"><label for="#" class="txt_right font_100 txt_center black noto_bold line_h_200">お名前</label></p>
+                            <p class="txt_left txt_mg_0 view_tabsp bspace_1"><label for="#" class="txt_right font_100 txt_center black noto_bold line_h_200">お名前 &nbsp; <span class="font_75 white bold txt_bpad_05 txt_tpad_05 txt_rpad_05 txt_lpad_05" style="background-color: #ff8315;">必須</span></label></p>
+                        </div>
+                        <div class="form_item_2 txt_center">
+                            <div class="view_pc">
+                                <span class="font_75 white bold txt_bpad_05 txt_tpad_05 txt_rpad_05 txt_lpad_05 " style="background-color: #ff8315;">必須</span>
+                            </div>
+                        </div>
+                        <div class="form_item_3">
+                            <input class="validate[required] width_100 font_100 txt_tpad_05 txt_lpad_05 txt_bpad_05 box_radius_10 box_m_black" type="text" id="input-name" type="text" name="your_name" value="<?php if( !empty($clean['your_name']) ){ echo $clean['your_name']; } ?>" placeholder="例）　山田　太郎">
+                            <?php if( !empty($error['your_name']) ): ?><p class="error_msg bold" style="margin: 0; padding-top: 5px;"><?php echo $error['your_name']; ?></p><?php endif; ?>
+                        </div>
+                    </div>
+                    <div class="space_1"></div>
+                    <div class="space_2 view_tabsp"></div>
+                    <div class="wrapper_100 flex flex_center">
+                        <div class="form_item_1">
+                            <p class="txt_right txt_mg_0 view_pc"><label for="#" class="txt_right font_100 txt_center black noto_bold line_h_200">フリガナ</label></p>
+                            <p class="txt_left txt_mg_0 view_tabsp bspace_1"><label for="#" class="txt_right font_100 txt_center black noto_bold line_h_200">フリガナ &nbsp; <span class="font_75 white bold txt_bpad_05 txt_tpad_05 txt_rpad_05 txt_lpad_05" style="background-color: #ff8315;">必須</span></label></p>
+                        </div>
+                        <div class="form_item_2 txt_center">
+                            <div class="view_pc">
+                                <span class="font_75 white bold txt_bpad_05 txt_tpad_05 txt_rpad_05 txt_lpad_05 " style="background-color: #ff8315;">必須</span>
+                            </div>
+                        </div>
+                        <div class="form_item_3">
+                            <input class="validate[required] width_100 font_100 txt_tpad_05 txt_lpad_05 txt_bpad_05 box_radius_10 box_m_black" type="text" id="input-furigana" type="text" name="furigana" value="<?php if( !empty($clean['furigana']) ){ echo $clean['furigana']; } ?>" placeholder="例）　ヤマダ　タロウ">
+                            <?php if( !empty($error['furigana']) ): ?><p class="error_msg bold" style="margin: 0; padding-top: 5px;"><?php echo $error['furigana']; ?></p><?php endif; ?>
+                        </div>
+                    </div>
+                    <div class="space_1"></div>
+                    <div class="space_2 view_tabsp"></div>
+                    <div class="wrapper_100 flex flex_center">
+                        <div class="form_item_1">
+                            <p class="txt_right txt_mg_0 view_pc"><label for="#" class="txt_right font_100 txt_center black noto_bold line_h_200">メールアドレス</label></p>
+                            <p class="txt_left txt_mg_0 view_tabsp bspace_1"><label for="#" class="txt_right font_100 txt_center black noto_bold line_h_200">メールアドレス &nbsp; <span class="font_75 white bold txt_bpad_05 txt_tpad_05 txt_rpad_05 txt_lpad_05" style="background-color: #ff8315;">必須</span></label></p>
+                        </div>
+                        <div class="form_item_2 txt_center">
+                            <div class="view_pc">
+                                <span class="font_75 white bold txt_bpad_05 txt_tpad_05 txt_rpad_05 txt_lpad_05 " style="background-color: #ff8315;">必須</span>
+                            </div>
+                        </div>
+                        <div class="form_item_3">
+                            <input class="validate[required,custom[email]] width_100 font_100 txt_tpad_05 txt_lpad_05 txt_bpad_05 box_radius_10 box_m_black" type="email" id="input-email" type="text" name="email" value="<?php if( !empty($clean['email']) ){ echo $clean['email']; } ?>" placeholder="例）　example@mystique.com">
+                            <?php if( !empty($error['email']) ): ?><p class="error_msg bold" style="margin: 0; padding-top: 5px;"><?php echo $error['email']; ?></p><?php endif; ?>
+                        </div>
+                    </div>
+                    <div class="space_1"></div>
+                    <div class="space_2 view_tabsp"></div>
+                    <div class="wrapper_100 flex flex_center">
+                        <div class="form_item_1">
+                            <p class="txt_right txt_mg_0 view_pc"><label for="#" class="txt_right font_100 txt_center black noto_bold line_h_200">電話番号</label></p>
+                            <p class="txt_left txt_mg_0 view_tabsp bspace_1"><label for="#" class="txt_right font_100 txt_center black noto_bold line_h_200">電話番号 &nbsp; <span class="font_75 white bold txt_bpad_05 txt_tpad_05 txt_rpad_05 txt_lpad_05" style="background-color: #ff8315;">必須</span></label></p>
+                        </div>
+                        <div class="form_item_2 txt_center">
+                            <div class="view_pc">
+                                <span class="font_75 white bold txt_bpad_05 txt_tpad_05 txt_rpad_05 txt_lpad_05 " style="background-color: #ff8315;">必須</span>
+                            </div>
+                        </div>
+                        <div class="form_item_3">
+                            <input class="validate[required,custom[phone],maxSize[13]] width_100 font_100 txt_tpad_05 txt_lpad_05 txt_bpad_05 box_radius_10 box_m_black" id="input-tel" type="tel" name="tel" value="<?php if( !empty($clean['tel']) ){ echo $clean['tel']; } ?>" placeholder="例）   09012345555">
+                            <?php if( !empty($error['tel']) ): ?><p class="error_msg bold" style="margin: 0; padding-top: 5px;"><?php echo $error['tel']; ?></p><?php endif; ?>
+                        </div>
+                    </div>
+                    <div class="space_1"></div>
+                    <div class="space_2 view_tabsp"></div>
+                    <div class="wrapper_100 flex">
+                        <div class="form_item_1">
+                            <p class="txt_right txt_mg_0 view_pc"><label for="#" class="txt_right font_100 txt_center black noto_bold line_h_200">来店希望日</label></p>
+                        </div>
+                        <div class="form_item_2 txt_center">
+                            <!-- <span class="font_75 white bold txt_bpad_05 txt_tpad_05 txt_rpad_05 txt_lpad_05" style="background-color: #ff8315;">必須</span> -->
+                        </div>
+                        <div class="form_item_3">
+                            <label for="#" class="font_100 txt_center black noto_bold line_h_200">第1希望日 &nbsp; <span class="font_75 white bold txt_bpad_05 txt_tpad_05 txt_rpad_05 txt_lpad_05" style="background-color: #ff8315;">必須</span></label>
+                            <div class="space_05"></div>
+                            <div class="wrapper_100 flex_1" style="justify-content: space-between;">
+                                <div class="width_48 f_sub" >
+                                    <input class="validate[required] width_100 font_100 txt_lpad_05 box_radius_10 box_m_black" type="date" id="input-date1" type="text" name="date1" value="<?php if( !empty($clean['date1']) ){ echo $clean['date1']; } ?>" placeholder="">
+                                    <?php if( !empty($error['date1']) ): ?><p class="error_msg bold" style="margin: 0; padding-top: 5px;"><?php echo $error['date1']; ?></p><?php endif; ?>
+                                </div>
+                                <div class="width_48 f_sub">
+                                    <select id="input-time1" name="time1" class="width_100 font_100 txt_tpad_05 txt_lpad_05 box_radius_10 box_m_black">
+                                        <option value="10:00" <?php if( !empty($clean['time1']) && $clean['time1'] === "10:00" ){ echo 'selected'; } ?>>10:00</option>
+                                        <option value="10:30" <?php if( !empty($clean['time1']) && $clean['time1'] === "10:30" ){ echo 'selected'; } ?>>10:30</option>
+                                        <option value="11:00" <?php if( !empty($clean['time1']) && $clean['time1'] === "11:00" ){ echo 'selected'; } ?>>11:00</option>
+                                        <option value="11:30" <?php if( !empty($clean['time1']) && $clean['time1'] === "11:30" ){ echo 'selected'; } ?>>11:30</option>
+                                        <option value="12:00" <?php if( !empty($clean['time1']) && $clean['time1'] === "12:00" ){ echo 'selected'; } ?>>12:00</option>
+                                        <option value="12:30" <?php if( !empty($clean['time1']) && $clean['time1'] === "12:30" ){ echo 'selected'; } ?>>12:30</option>
+                                        <option value="13:00" <?php if( !empty($clean['time1']) && $clean['time1'] === "13:00" ){ echo 'selected'; } ?>>13:00</option>
+                                        <option value="13:30" <?php if( !empty($clean['time1']) && $clean['time1'] === "13:30" ){ echo 'selected'; } ?>>13:30</option>
+                                        <option value="14:00" <?php if( !empty($clean['time1']) && $clean['time1'] === "14:00" ){ echo 'selected'; } ?>>14:00</option>
+                                        <option value="14:30" <?php if( !empty($clean['time1']) && $clean['time1'] === "14:30" ){ echo 'selected'; } ?>>14:30</option>
+                                        <option value="15:00" <?php if( !empty($clean['time1']) && $clean['time1'] === "15:00" ){ echo 'selected'; } ?>>15:00</option>
+                                        <option value="15:30" <?php if( !empty($clean['time1']) && $clean['time1'] === "15:30" ){ echo 'selected'; } ?>>15:30</option>
+                                        <option value="16:00" <?php if( !empty($clean['time1']) && $clean['time1'] === "16:00" ){ echo 'selected'; } ?>>16:00</option>
+                                        <option value="16:30" <?php if( !empty($clean['time1']) && $clean['time1'] === "16:30" ){ echo 'selected'; } ?>>16:30</option>
+                                        <option value="17:00" <?php if( !empty($clean['time1']) && $clean['time1'] === "17:00" ){ echo 'selected'; } ?>>17:00</option>
+                                        <option value="17:30" <?php if( !empty($clean['time1']) && $clean['time1'] === "17:30" ){ echo 'selected'; } ?>>17:30</option>
+                                        <option value="18:00" <?php if( !empty($clean['time1']) && $clean['time1'] === "18:00" ){ echo 'selected'; } ?>>18:00</option>
+                                        <option value="18:30" <?php if( !empty($clean['time1']) && $clean['time1'] === "18:30" ){ echo 'selected'; } ?>>18:30</option>
+                                        <option value="19:00" <?php if( !empty($clean['time1']) && $clean['time1'] === "19:00" ){ echo 'selected'; } ?>>19:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="space_1"></div>
+                            <label for="#" class="font_100 txt_center black noto_bold line_h_200">第2希望日 &nbsp; <span class="font_75 white bold txt_bpad_05 txt_tpad_05 txt_rpad_05 txt_lpad_05" style="background-color: #8d8b83;">必須</span></label>
+                            <div class="space_05"></div>
+                            <div class="wrapper_100 flex_1" style="justify-content: space-between;">
+                                <div class="width_48 f_sub">
+                                    <input class="validate[required] width_100 font_100 txt_lpad_05 box_radius_10 box_m_black" type="date" id="input-date2" type="text" name="date2" value="<?php if( !empty($clean['date2']) ){ echo $clean['date2']; } ?>" placeholder="">
+                                    <?php if( !empty($error['date2']) ): ?><p class="error_msg bold" style="margin: 0; padding-top: 5px;"><?php echo $error['date2']; ?></p><?php endif; ?>
+                                </div>
+                                <div class="width_48 f_sub">
+                                    <select id="input-time2" name="time2" class="width_100 font_100 txt_tpad_05 txt_lpad_05  box_radius_10 box_m_black">
+                                        <option value="10:00" <?php if( !empty($clean['time2']) && $clean['time2'] === "10:00" ){ echo 'selected'; } ?>>10:00</option>
+                                        <option value="10:30" <?php if( !empty($clean['time2']) && $clean['time2'] === "10:30" ){ echo 'selected'; } ?>>10:30</option>
+                                        <option value="11:00" <?php if( !empty($clean['time2']) && $clean['time2'] === "11:00" ){ echo 'selected'; } ?>>11:00</option>
+                                        <option value="11:30" <?php if( !empty($clean['time2']) && $clean['time2'] === "11:30" ){ echo 'selected'; } ?>>11:30</option>
+                                        <option value="12:00" <?php if( !empty($clean['time2']) && $clean['time2'] === "12:00" ){ echo 'selected'; } ?>>12:00</option>
+                                        <option value="12:30" <?php if( !empty($clean['time2']) && $clean['time2'] === "12:30" ){ echo 'selected'; } ?>>12:30</option>
+                                        <option value="13:00" <?php if( !empty($clean['time2']) && $clean['time2'] === "13:00" ){ echo 'selected'; } ?>>13:00</option>
+                                        <option value="13:30" <?php if( !empty($clean['time2']) && $clean['time2'] === "13:30" ){ echo 'selected'; } ?>>13:30</option>
+                                        <option value="14:00" <?php if( !empty($clean['time2']) && $clean['time2'] === "14:00" ){ echo 'selected'; } ?>>14:00</option>
+                                        <option value="14:30" <?php if( !empty($clean['time2']) && $clean['time2'] === "14:30" ){ echo 'selected'; } ?>>14:30</option>
+                                        <option value="15:00" <?php if( !empty($clean['time2']) && $clean['time2'] === "15:00" ){ echo 'selected'; } ?>>15:00</option>
+                                        <option value="15:30" <?php if( !empty($clean['time2']) && $clean['time2'] === "15:30" ){ echo 'selected'; } ?>>15:30</option>
+                                        <option value="16:00" <?php if( !empty($clean['time2']) && $clean['time2'] === "16:00" ){ echo 'selected'; } ?>>16:00</option>
+                                        <option value="16:30" <?php if( !empty($clean['time2']) && $clean['time2'] === "16:30" ){ echo 'selected'; } ?>>16:30</option>
+                                        <option value="17:00" <?php if( !empty($clean['time2']) && $clean['time2'] === "17:00" ){ echo 'selected'; } ?>>17:00</option>
+                                        <option value="17:30" <?php if( !empty($clean['time2']) && $clean['time2'] === "17:30" ){ echo 'selected'; } ?>>17:30</option>
+                                        <option value="18:00" <?php if( !empty($clean['time2']) && $clean['time2'] === "18:00" ){ echo 'selected'; } ?>>18:00</option>
+                                        <option value="18:30" <?php if( !empty($clean['time2']) && $clean['time2'] === "18:30" ){ echo 'selected'; } ?>>18:30</option>
+                                        <option value="19:00" <?php if( !empty($clean['time2']) && $clean['time2'] === "19:00" ){ echo 'selected'; } ?>>19:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="space_1"></div>
+                            <label for="#" class="font_100 txt_center black noto_bold line_h_200">第3希望日 &nbsp; <span class="font_75 white bold txt_bpad_05 txt_tpad_05 txt_rpad_05 txt_lpad_05" style="background-color: #8d8b83;">必須</span></label>
+                            <div class="space_05"></div>
+                            <div class="wrapper_100 flex_1" style="justify-content: space-between;">
+                                <div class="width_48 f_sub">
+                                    <input class="validate[required] width_100 font_100 txt_lpad_05 box_radius_10 box_m_black" type="date" id="input-date3" type="text" name="date3" value="<?php if( !empty($clean['date3']) ){ echo $clean['date3']; } ?>" placeholder="">
+                                    <?php if( !empty($error['date3']) ): ?><p class="error_msg bold" style="margin: 0; padding-top: 5px;"><?php echo $error['date3']; ?></p><?php endif; ?>
+                                </div>
+                                <div class="width_48 f_sub">
+                                    <select id="input-time3" name="time3" class="width_100 font_100 txt_lpad_05 txt_tpad_05 box_radius_10 box_m_black">
+                                        <option value="10:00" <?php if( !empty($clean['time2']) && $clean['time2'] === "10:00" ){ echo 'selected'; } ?>>10:00</option>
+                                        <option value="10:30" <?php if( !empty($clean['time3']) && $clean['time3'] === "10:30" ){ echo 'selected'; } ?>>10:30</option>
+                                        <option value="11:00" <?php if( !empty($clean['time3']) && $clean['time3'] === "11:00" ){ echo 'selected'; } ?>>11:00</option>
+                                        <option value="11:30" <?php if( !empty($clean['time3']) && $clean['time3'] === "11:30" ){ echo 'selected'; } ?>>11:30</option>
+                                        <option value="12:00" <?php if( !empty($clean['time3']) && $clean['time3'] === "12:00" ){ echo 'selected'; } ?>>12:00</option>
+                                        <option value="12:30" <?php if( !empty($clean['time3']) && $clean['time3'] === "12:30" ){ echo 'selected'; } ?>>12:30</option>
+                                        <option value="13:00" <?php if( !empty($clean['time3']) && $clean['time3'] === "13:00" ){ echo 'selected'; } ?>>13:00</option>
+                                        <option value="13:30" <?php if( !empty($clean['time3']) && $clean['time3'] === "13:30" ){ echo 'selected'; } ?>>13:30</option>
+                                        <option value="14:00" <?php if( !empty($clean['time3']) && $clean['time3'] === "14:00" ){ echo 'selected'; } ?>>14:00</option>
+                                        <option value="14:30" <?php if( !empty($clean['time3']) && $clean['time3'] === "14:30" ){ echo 'selected'; } ?>>14:30</option>
+                                        <option value="15:00" <?php if( !empty($clean['time3']) && $clean['time3'] === "15:00" ){ echo 'selected'; } ?>>15:00</option>
+                                        <option value="15:30" <?php if( !empty($clean['time3']) && $clean['time3'] === "15:30" ){ echo 'selected'; } ?>>15:30</option>
+                                        <option value="16:00" <?php if( !empty($clean['time3']) && $clean['time3'] === "16:00" ){ echo 'selected'; } ?>>16:00</option>
+                                        <option value="16:30" <?php if( !empty($clean['time3']) && $clean['time3'] === "16:30" ){ echo 'selected'; } ?>>16:30</option>
+                                        <option value="17:00" <?php if( !empty($clean['time3']) && $clean['time3'] === "17:00" ){ echo 'selected'; } ?>>17:00</option>
+                                        <option value="17:30" <?php if( !empty($clean['time3']) && $clean['time3'] === "17:30" ){ echo 'selected'; } ?>>17:30</option>
+                                        <option value="18:00" <?php if( !empty($clean['time3']) && $clean['time3'] === "18:00" ){ echo 'selected'; } ?>>18:00</option>
+                                        <option value="18:30" <?php if( !empty($clean['time3']) && $clean['time3'] === "18:30" ){ echo 'selected'; } ?>>18:30</option>
+                                        <option value="19:00" <?php if( !empty($clean['time3']) && $clean['time3'] === "19:00" ){ echo 'selected'; } ?>>19:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space_2"></div>
+                    <div class="wrapper_100 flex">
+                        <li class="form_item_1">
+                            <p class="txt_right txt_mg_0 view_pc"><label for="#" class="txt_right font_100 txt_center black noto_bold line_h_200">お問い合わせ内容</label></p>
+                            <p class="txt_left txt_mg_0 view_tabsp bspace_1"><label for="#" class="txt_right font_100 txt_center black noto_bold line_h_200">お問い合わせ内容</label></p>
+                        </li>
+                        <li class="form_item_2">
+
+                        </li>
+                        <li class="form_item_3">
+                            <textarea class="width_100 font_100 txt_tpad_05 txt_lpad_05 txt_bpad_05 txt_rpad_05 box_radius_10 box_m_black" rows="10" id="input-text" name="contact" placeholder=""><?php if( !empty($clean['contact']) ){ echo $clean['contact']; } ?></textarea>
+                        </li>
+                    </div>
+
+                    <div class="space_4"></div>
+
+                    <!-- <div class="cont_wrapper_50 txt_tpad_1 txt_bpad_1">
+                        <div class="space_1"></div>
+                        <div class="txt_center cont_wrapper_50 flex flex_center agreement txt_bpad_05 txt_tpad_05" style="position:relative;">
+                            <div class="txt_right f_sub  width_10">
+                                <input id="agreement" class="validate[required]" type="checkbox" name="agreement" value="1" >
+                            </div>
+                            <div class="txt_left txt_lpad_1 f_sub f_right width_90">
+                                <label for="agreement"><p href="#" target=""><span class="view_pc font_100">「個人情報の取り扱いについて」に同意します</span><span class="view_tabsp txt_left font_75">「個人情報の取り扱いについて」に同意します</span></p></label>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="wrapper_40 view_pc">
+                        <input class="view_pc square_btn white line_h_250 font_125 noto_bold box_radius_9999" type="submit" name="btn_confirm" value="確認画面へ進む" style="background-color: #ff8315;">
+                    </div>
+                    <div class="wrapper_100 view_tabsp">
+                        <input class="view_tabsp square_btn white line_h_250 font_125 noto_bold box_radius_9999" type="submit" name="btn_confirm" value="確認画面へ進む" style="background-color: #ff8315;">
+                    </div>
+
+                </form>
+            </div>
+        </section>
+        
+        <div class="space_5"></div>
+	</main>
+
+	<footer></footer>
+
+
+</body>
+
+
+<script>
+    // Ease Scrolling
+    $("html").easeScroll();
+
+    $(document).ready(function(){
+        $.fn.scrollView = function () {
+            return this.each(function () {
+                $('html, body').animate({
+                    scrollTop: $(this).offset().top - 100
+                }, 1000);
+            });
+        }
+
+        function check(){
+            if ($('.error_msg').is(':visible')) { 
+                // we're empty. do stuff.
+                $('.error_msg:visible:first').scrollView();
+            }
+        }
+        
+        check();
+        
+    }); 
+
+</script>
+
+</html>

@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+
+
+/* ------------------------------
+   MEDIAQUERIES LAYOUT
+------------------------------ */
+@media only screen and (max-width: 800px) {
+	#globalMenu ul {
+		width: 100%;
+	}
+
+	#globalMenu ul li {
+		width: 20%;
+	}
+}
+
+/* ------------------------------
+   MEDIAQUERIES[SP]LAYOUT
+------------------------------ */
+@media only screen and (max-width: 768px) {
+	#globalMenu {
+		display: none;
+	}
+
+	#rwdMenuWrap {
+		width: 95%;
+		margin:0 auto;
+	}
+
+	#rwdMenuWrap #switchBtnArea {
+		width: 100%;
+		height: 60px;
+		position: relative;
+	}
+
+	#rwdMenuWrap #switchBtnArea #switchBtn {
+		top: 10px;
+		left: 10px;
+		width: 40px;
+		height: 40px;
+		background:url(../img/btnOpen.png) no-repeat center center;
+		position: absolute;
+	}
+
+	#rwdMenuWrap #switchBtnArea #switchBtn.btnClose {
+		background-image: url(../img/btnOpen.png);
+	}
+
+	#rwdMenuWrap ul {
+		margin:0 auto;
+		padding:0;
+		width: 90%;
+		display: none;
+	}
+
+	#rwdMenuWrap ul li {
+		margin:0;
+		width: 100%;
+		border-bottom: #fff 1px solid;
+		list-style-type:none;
+	}
+
+	#rwdMenuWrap ul li a {
+		margin:0;
+		padding: 15px 0px;
+		text-align: left;
+		background: url(../img/linkarw.png) no-repeat right center;
+		display: block;
+		color:#fff;
+		text-decoration:none;
+		font-size:0.8em;
+	}
+}
+
+/* ------------------------------
+   CLEARFIX ELEMENTS
+------------------------------ */
+#globalMenu > ul:before,
+#globalMenu > ul:after {
+	content: " ";
+	display: table;
+}
+#globalMenu > ul:after {clear: both;}
+#globalMenu > ul {*zoom: 1;}
